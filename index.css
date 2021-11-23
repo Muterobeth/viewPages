@@ -1,0 +1,157 @@
+* {
+  box-sizing: content-box;
+}
+body {
+  font-family: "Lato", sans-serif;
+}
+article {
+  margin-left: 20%;
+}
+article h2,
+p {
+  color: black;
+}
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #142f43;
+  font-family: arial;
+  text-align: left;
+  width: 100%;
+  position: sticky;
+  top: 0;
+}
+ul.topnav li {
+  float: left;
+}
+ul.topnav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  float: left;
+  font-size: 17px;
+  border-right: 1px solid #bbb;
+}
+ul.topnav li a:hover:not(.active) {
+  background-color: #ddd;
+  color: black;
+}
+ul.topnav li a.active {
+  background-color: #4caf50;
+}
+ul.topnav li.right {
+  float: right;
+}
+
+h2 {
+  text-decoration: underline;
+  color: #ffab4c;
+}
+
+/* side nav bar */
+.sidenav {
+  width: 150px;
+  position: fixed;
+  z-index: 1;
+  top: 2, 0px;
+  left: 10px;
+  background: #eee;
+  overflow-x: hidden;
+  padding: 8px 0;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  font-size: 16px;
+  color: #2196f3;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #064579;
+}
+
+.main {
+  margin-left: 150px; /* Same width as the sidebar + left position in px */
+  font-size: 16px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+.itemlist {
+  list-style: decimal;
+  font-size: 16px;
+}
+.images {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  flex-wrap: wrap;
+  gap: 10px 10px;
+}
+
+.galleryimage {
+  width: 350px;
+  height: 150px;
+}
+
+.gallerylist {
+  /* percent per item in row. 
+    33% = limit to 3 per row. */
+  flex: 1 0 33%;
+  margin: 5px;
+  height: 150px;
+}
+
+/* The footer */
+footer {
+  width: 100%;
+  background: #b000b9;
+  position: relative;
+  z-index: 1;
+  bottom: 2, 0px;
+}
+.container {
+  padding: 45px 0 20px;
+  font-size: 15px;
+  line-height: 24px;
+  color: #1a47fa;
+  overflow-x: hidden;
+  padding: 10px 10px;
+}
+
+.col {
+  float: left;
+}
+ul {
+  list-style: circle;
+  font-size: 10px;
+}
+.container .social-icons img {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  margin-left: 6px;
+  margin-right: 0;
+  border-radius: 100%;
+}
+
+.container img:hover {
+  background-color: #cc5233;
+  text-decoration: none;
+  width: 45px;
+  height: 45px;
+}
+
+.social-icons {
+  display: flex;
+  flex-direction: row;
+  align-self: flex-start;
+  justify-content: start;
+  gap: 10px 10px;
+}
+.copyright-text {
+  font-size: 16px;
+}
